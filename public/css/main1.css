@@ -1,0 +1,559 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+.codeshala-course-card, .codeshala-course-detail-card {
+  vertical-align: top;
+  -webkit-transition: .1s;
+  -o-transition: .1s;
+  position: relative
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased
+}
+
+body {
+  background-color: #fefefe;
+  font-family: Gotham SSm A, Gotham SSm B, Helvetica, sans-serif
+}
+
+h3.main-heading{
+  padding-bottom: 20px;
+  color: #347480;
+}
+
+.codeshala-theme, a {
+  color: #323754
+}
+
+a:hover {
+  text-decoration: none
+}
+
+nav {
+  /* background: linear-gradient(#a1a1a2, transparent); */
+  background-color: #e1f5fe;
+}
+
+.codeshala-heading {
+  height: auto;
+  z-index: 9999
+}
+
+.codeshala-banner {
+  / / background-image: url(/assets/images/banners/background.png)
+}
+
+.codeshala-heading>h1 {
+  font-size: 25px;
+  font-weight: 700
+}
+
+.codeshala-heading>p {
+  color: #7f7f7f;
+  font-size: 15px;
+}
+
+#about-section{
+  /* background-color: #e1f5fe; */
+  background: linear-gradient(#e1f5fe 55%, #f7fdff);
+  padding: 24px;
+}
+
+#courses-section{
+  /* background-color: #fff9e1; */
+  border-top: 2px dashed #e1f5fe;
+  background: linear-gradient(#f7fdff 55%, white);
+  padding: 24px;
+}
+
+.codeshala-course-heading>h1 {
+  margin-top: 50px;
+  font-size: 2vw;
+  font-weight: 700
+}
+
+.codeshala-heading>h2 {
+  color: #7f7f7f;
+  font-size: 15px;
+  font-weight: 300
+}
+
+.codeshala-course-card {
+  will-change: transform;
+  transition: .1s;
+  -webkit-box-shadow: 0 2px 64px 0 rgba(208, 208, 208, .5);
+  box-shadow: 0 2px 64px 0 rgba(208, 208, 208, .5);
+  padding: 24px 24px;
+  margin: 24px auto;
+  display: block;
+}
+
+.codeshala-course-registration-card {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 140px;
+  -webkit-box-shadow: 0 2px 64px 0 rgba(208, 208, 208, .5);
+  box-shadow: 0 2px 64px 0 rgba(208, 208, 208, .5);
+  padding: 25px
+}
+
+.codeshala-course-detail-card, .codeshala-stats-card {
+  -webkit-box-shadow: 0 2px 64px 0 rgba(208, 208, 208, .5);
+  will-change: transform
+}
+
+.codeshala-course-registration-card>h3 {
+  font-weight: 600
+}
+
+.codeshala-course-registration-border {
+  border-left: 4px solid #000
+}
+
+.codeshala-course-detail-card {
+  transition: .1s;
+  box-shadow: 0 2px 64px 0 rgba(208, 208, 208, .5);
+  padding: 0 24px;
+  max-height: 340px;
+  overflow: hidden;
+  margin: -100px 40px 140px
+}
+
+.codeshala-course-detail-card>h2 {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 700
+}
+
+.codeshala-course-detail-card>p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+  background-image: linear-gradient(to bottom, transparent, #000);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(210, 0, 0, 0)), color-stop(1, #a1a1a2));
+  font-size: 20px;
+  font-weight: 600
+}
+
+.codeshala-course-card:hover {
+  webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -o-transform: scale(1.07);
+  transform: scale(1.07);
+}
+
+.codeshala-course-card>h2 {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 700
+}
+
+.codeshala-course-card>p {
+  color: #7f7f7f;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px
+}
+
+.codeshala-course-thumbnail {
+  width: 84px;
+  height: 84px;
+  margin: 25px auto 20px;
+  background-size: cover
+}
+
+.codeshala-course-card-btn {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: .5px;
+  font-weight: 700;
+  margin-bottom: 15px
+}
+
+.codeshala-description {
+  margin: 30px
+}
+
+.codeshala-company-image {
+  margin-bottom: 20px
+}
+
+.codeshala-stats-card {
+  margin: 25px;
+  border-radius: 50%;
+  width: 210px;
+  height: 210px;
+  border: 0 solid #000;
+  -webkit-transition: .1s;
+  -o-transition: .1s;
+  transition: .1s;
+  box-shadow: 0 2px 64px 0 rgba(208, 208, 208, .5);
+  background-color: #fff
+}
+
+.codeshala-placements, footer {
+  border-top: 1px solid #252525
+}
+
+.footer-col{
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.codeshala-stats-card>span {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  float: left
+}
+
+.codeshala-stats-card-count {
+  font-size: 25px;
+  font-weight: 700
+}
+
+#projects{
+  background: linear-gradient(#f7fff8 55%, #f7fdff);
+  border-top: 2px dashed #dff7e2;
+  padding: 16px;
+  padding-bottom: 32px;
+}
+
+.codeshala-projects-card {
+  margin: 20px;
+  will-change: transform;
+  -webkit-transition: .1s;
+  -o-transition: .1s;
+  transition: .1s;
+  -webkit-box-shadow: 0 2px 24px 0 rgba(240, 240, 240, 1);
+  box-shadow: 0 2px 24px 0 rgba(240, 240, 240, 1);
+  background-color: #fff
+}
+
+.codeshala-projects-card:hover {
+  box-shadow: 0 2px 64px 0 rgba(208, 208, 208, .5);
+  webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -o-transform: scale(1.07);
+  transform: scale(1.07)
+}
+
+.codeshala-projects-thumbnail {
+  width: 100%;
+  height: 184px;
+  margin: 25px auto 20px;
+  background-size: cover
+}
+
+.codeshala-projects-title {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 700
+}
+
+.codeshala-projects-description {
+  color: #7f7f7f;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px
+}
+
+.codeshala-arrow {
+  top: 43%;
+  right: 2%;
+  position: absolute;
+  z-index: 2
+}
+
+.codeshala-feedbacks-card {
+  margin: 20px;
+  -webkit-box-shadow: 0 2px 64px 0 rgba(208, 208, 208, .5);
+  box-shadow: 0 2px 64px 0 rgba(208, 208, 208, .5);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.codeshala-feedbacks-thumbnail {
+  background-size: cover
+}
+
+.codeshala-feedbacks-title {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700
+}
+
+.codeshala-feedbacks-description {
+  color: #7f7f7f;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px
+}
+
+.codeshala-course-description-list>li {
+  color: #7f7f7f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px
+}
+
+#stats{
+  padding: 20px;
+  /* margin-top: 48px !important;
+  margin-bottom: 48px !important; */
+   /*background-color: #dff7e2; */
+  background-color: #f7fff8;
+  /*background: linear-gradient(#f7fff8);*/
+  border-top: 2px dashed #dff7e2;
+  border-bottom: 2px dashed #dff7e2;
+}
+
+.stats{
+  color: #869c88;
+}
+
+.codeshala-footer-course-finder-link {
+  color: #fff
+}
+
+.footer-links>li>a, footer {
+  color: #7f7f7f
+}
+
+footer {
+  background: #191919;
+  text-align: center;
+  padding: 50px 10px;
+  font-size: 14px
+}
+
+#video{
+  /* background-color: #777777; */
+  background: linear-gradient(white, #f7fff8);
+  padding: 24px;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-links {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.footer-links>li>a:hover {
+  color: #fff
+}
+
+.footer-links-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700
+}
+
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute
+}
+
+.ribbon::after, .ribbon::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #2980b9;
+}
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: #3498db;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  color: #fff;
+  font: 700 18px/1 Lato, sans-serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-transform: uppercase;
+  text-align: center
+}
+
+.ribbon-top-left {
+  top: -10px;
+  left: -10px
+}
+
+.ribbon-top-left::after, .ribbon-top-left::before {
+  border-top-color: transparent;
+  border-left-color: transparent
+}
+
+.ribbon-top-left::before {
+  top: 0;
+  right: 0
+}
+
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0
+}
+
+.ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg)
+}
+
+.codeshala-github-btn {
+  margin: 15px;
+  color: #fff;
+  background-color: #444;
+  border-color: rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  padding: 7px 7px 7px 44px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  width: 350px
+}
+
+.codeshala-github-btn:hover {
+  background-color: #000
+}
+
+.codeshala-github-btn-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 32px;
+  padding: 2px;
+  line-height: 34px;
+  font-size: 1.6em;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, .2)
+}
+
+.cs-color {
+  background-color: #323754
+}
+
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px
+}
+
+.codeshala-logo {
+  width: 200px;
+  height: 40px
+}
+
+#editor {
+  min-height: 500px
+}
+
+.code-toolbar {
+  padding: 10px
+}
+
+.ide-footer-container {
+  color: #fff;
+  padding: 15px
+}
+
+.ide-footer-container hr {
+  background-color: #fff
+}
+
+section#counter-stats {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+#feedbacks{
+  border-top: 2px dashed #e1f5fe;
+  background: linear-gradient(160deg, #f7fdff 55%, #e1f5fe);
+  padding: 24px;
+}
+
+.stats {
+	text-align: center;
+	font-size: 35px;
+	font-weight: 700;
+	font-family: "Montserrat", sans-serif;
+  padding-bottom: 16px;
+}
+
+.stats .fa {
+	color: #869c88;
+	font-size: 60px;
+}
+
+#about-us{
+  background: linear-gradient(#e1f5fe 55%, #f7fdff);
+  padding: 24px;
+}
+
+.about-us-container{
+  padding: 36px 24px;
+  border: 2px dashed #b6edff;
+  box-shadow: 2px 2px 24px #bbb;
+}
+
+
+/* ------------------- slide animation */
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
