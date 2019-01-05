@@ -21,7 +21,7 @@
         color: #191919;
       }
     </style>
-    <title>CA-Gateway-Academy | Home</title>
+    <title>Home | CA Gateway Academy</title>
   </head>
 
   <body>
@@ -70,27 +70,34 @@
 
       <h3 class="main-heading">COURSES WE OFFER</h3>
       <div class=" row mx-auto ">
+    <% if (message.length > 0) { %>
+    <% message.forEach(function(course){ %>
+
         <div class=" card col-lg-3 codeshala-course-card">
+          <% if (course.courseRegistrationStatus == "open") { %>
           <div class=" ribbon ribbon-top-left ">
             <span>Open</span></div>
-
+            <% } %>
           <div class=" codeshala-course-thumbnail " style=" background-image:url( './images/course-icon/algo.png' );background-size:cover;background-repeat: no-repeat; "></div>
           <h2>
-            <a href="/course/da-1 %>">Data Structures & Algorithms 1</a>
+            <a href="/register/<%= course.alias %>"><%= course.name %></a>
           </h2>
           <h2>
-            Starting From 1995-10-21<br/>
+            <span>Starting From </span>
+           <%= course.startDate %><br/>
           </h2><br/>
-          <p>20 - 22 Sessions<br/>
-            The course is designed to make students understand basics of how the web works and make them develop frontend using popular frameworks like bootstrap and backend using Node.js with MongoDB database. This course involves developing projects which will
-            transform a beginner in development to a professional developer and have their resume outshine others.</p>
+          <p><%= course.minsessions %><span>-</span><%= course.maxsessions %><span> Sessions</span><br/>
+            <span>Fees- </span><%= course.fees %><span>/-</span><br /><%= course.seats %><span> Seats</span><br />
+            <%= course.description %></p>
           <span class="text-center codeshala-theme codeshala-course-card-btn">
-            <a href="/course/#">Explore more &amp; register
+            <a href="/register/<%= course.alias %>" >Explore more &amp; register
               <i class="fa fa-arrow-right"></i>
             </a>
           </span>
         </div>
-        <div class="card col-lg-3 codeshala-course-card">
+      <% }); %>
+    <% } %>
+        <!-- <div class="card col-lg-3 codeshala-course-card">
           <div class="ribbon ribbon-top-left">
             <span>Open</span></div>
 
@@ -110,8 +117,10 @@
               <i class="fa fa-arrow-right"></i>
             </a>
           </span>
-        </div>
-        <div class="card col-lg-3 codeshala-course-card">
+          </div>
+          
+
+          <div class="card col-lg-3 codeshala-course-card">
 
           <div class="codeshala-course-thumbnail" style="background-image:url('./images/course-icon/algo.png');background-size:cover;background-repeat: no-repeat;"></div>
           <h2>
@@ -129,7 +138,7 @@
               <i class="fa fa-arrow-right"></i>
             </a>
           </span>
-        </div>
+        </div> -->
         <!-- Insert new course above this line-->
       </div>
     </div>

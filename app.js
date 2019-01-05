@@ -29,7 +29,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Mongoose Connection 
-mongoose.connect('', { useNewUrlParser: true })
+mongoose.connect('mongodb://rohitbatra987:prince1234@ds247674.mlab.com:47674/cagatewayacademy', { useNewUrlParser: true })
 
 var db = mongoose.connection;
 

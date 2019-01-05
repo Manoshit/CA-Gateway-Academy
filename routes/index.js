@@ -49,8 +49,12 @@ module.exports = function (app) {
     app.use(passport.session());
 
     app.get('/',function(req,res){
-        res.render('home');
-    }) 
+    Course.find({ }).then(function(data){
+    console.log(data);
+    // data.sort(sortBy('rank'));
+    res.render('home',{message: data});
+    });
+    }); 
 
     app.get('/contact',function(req,res){
         res.render('contact');
@@ -77,7 +81,8 @@ module.exports = function (app) {
         res.render('admin-home');
     })
     
-    app.get('/register',function(req,res){
+    app.get('/register/:id',function(req,res){
+        console.log('I am in register Page');
         res.render('register');
     })
 

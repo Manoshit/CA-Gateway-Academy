@@ -1,7 +1,23 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 <title>Register Page</title>
+<script type="text/javascript">
+	function myfun(){
+	var a = window.location.href;
+	let str = "";
+	for(var i=a.length-1;i>=0;i--)
+	{
+		if(a[i]!='/')
+			str = str + a[i];
+		else
+			break;
+	}
+	str = str.split("").reverse().join("");
+  document.getElementById('courseAlias').value = str ;
+  document.getElementById('submit_btn').click();	
+}
+</script>
 </head>
 <body>
 <form method="post" action="/register" name="Registration_form">
@@ -10,8 +26,285 @@ LastName: <input type="text" name="lastName"><br>
 Email: <input type="text" name="email"><br>
 Phone: <input type="text" name="phone"><br>
 Whatsapp: <input type="text" name="whatsappNo"><br>
-CourseAlias: <input type="text" name="courseAlias"><br>
-<input type="submit" name="submit">	
+<input type="text" name="courseAlias" id="courseAlias" style="display: none"; ><br>
+<button name="submitt" value="submitt" onclick="myfun();">Submit</button>
+<input type="submit" name="submit_btn" id="submit_btn" style="display: none";>	
 </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrations | CA Gateway Academy</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#e1f5fe">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/slick/slick.css">
+    <link rel="stylesheet" href="../css/slick/slick-theme.css">
+
+    <!-- css -->
+    <link href="../css/main.css" rel="stylesheet">
+<style>
+.slick-next:before,
+      .slick-prev:before {
+        color: #191919;
+      }
+.contant-form-section{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+.form-group label {
+  float: left;
+    color: #5a76a8;
+    font-size: 15px;
+    padding: 5px 0px;
+}
+.form-group input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #5a76a8;
+    text-align: left;
+    padding: 0px 10px;
+    color: #5a76a8;
+}
+.contant-form-section h1 {
+    font-size: 80px;
+    font-weight: 300;
+    color: #5a76a8;
+}
+.contant-form-section p {
+    font-size: 20px;
+    color: #5a76a8;
+}
+.form-group textarea{
+  display: block;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #5a76a8;
+    text-align: left;
+    padding: 0px 10px;
+    margin: 0px -12px 0px 0px;
+    color: #5a76a8;
+}
+
+.form-group input:focus{
+  box-shadow: 1px 2px 11px -1px #fff;
+}
+.form-group textarea:focus{
+  box-shadow: 1px 2px 11px -1px #fff;
+}
+.contact-header-section{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#473286+0,3c8da2+100 */
+  background: #473286; /* Old browsers */
+  background: -moz-linear-gradient(360deg, #f7fdff 55%, #e1f5fe); /* FF3.6-15 */
+  background: -webkit-linear-gradient(360deg, #f7fdff 55%, #e1f5fe); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(360deg, #f7fdff 55%, #e1f5fe); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#473286', endColorstr='#3c8da2',GradientType=0 ); /* IE6-9 */
+  padding: 2% 0;
+}
+.form-group button{
+    float: left;
+    background: transparent;
+    border: 2px solid #5a76a8;
+    padding: 10px 35px;
+    color: #5a76a8;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btn-designs{
+  margin-top: 30px;
+}
+@media only screen and (max-width: 990px){
+  .contant-form-section{
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 767px){
+  .contant-form-section h1{
+      font-size: 65px;
+  }
+  .contant-form-section p{
+    font-size: 16px;
+  }
+}
+</style>
+<script type="text/javascript">
+	function myfun(){
+	var a = window.location.href;
+	let str = "";
+	for(var i=a.length-1;i>=0;i--)
+	{
+		if(a[i]!='/')
+			str = str + a[i];
+		else
+			break;
+	}
+	str = str.split("").reverse().join("");
+  document.getElementById('courseAlias').value = str ;
+  document.getElementById('submit_btn').click();	
+}
+</script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+      <a navbar-brand="navbar-brand" href=" / ">
+        <img class=" codeshala-logo " src="../images/logo.png " alt=" codeshala logo ">
+      </a>
+      <button class="navbar-toggler bg-light navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home
+            <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/about">About-Us</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/help">Help</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/contact">Contact-Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- Start Contact form section-->
+  <div class="contact-header-section">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-12">
+          <div class="contant-form-section">
+  				<h1>Register Here!</h1>
+          <div class="full-form-contact-form">
+            <form name="register_form" action="/register" method="post">
+              <div class="form-group">
+                <label>Firstname*</label>
+                <input type="text" name="firstName" required="" id="firstName">
+              </div>
+
+              <div class="form-group">
+                <label>Lastname</label>
+                <input type="text" name="lastName" id="lastName">
+              </div>
+
+              <div class="form-group">
+                <label>Email*</label>
+                <input type="email" name="email" required="" id="email">
+              </div>
+
+              <div class="form-group">
+                <label>Phone*</label>
+                <input type="text" name="phone" required="" id="phone">
+              </div>
+
+              <div class="form-group">
+                <label>Whatsapp No</label>
+                <input type="text" name="whatsappNo" id="whatsappNo">
+              </div>
+
+              <input type="text" name="courseAlias" id="courseAlias" style="display: none"; >
+
+             <div class="form-group btn-designs">
+             	<button name="submitt" value="submitt" onclick="myfun();" >Register</button>
+             </div>
+
+             <input type="submit" name="submit_btn" id="submit_btn" style="display: none";>
+
+            </form>
+        </div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+</div>
+<!--End Contact form-->
+
+  <footer class="container-fluid">
+    <div class="container" style="margin-top:10px;margin-bottom:10px;">
+      <div class="row">
+        <div class="col-lg-8" style="vertical-align:top;">
+          <div class="row">
+            <div class="col-lg-2 text-left footer-col">
+            </div>
+            <div class="col-lg-4 text-left footer-col">
+              <h3 class="footer-links-title">ABOUT CA Gateway Academy</h3>
+              <ul class="footer-links">
+                <li>
+                  <a href="/about">About</a>
+                </li>
+                <li>
+                  <a href="/contact">Contact</a>
+                </li>
+                <li>
+                  <a href="/help">Help</a>
+                </li>
+                <li>
+                  <a href="/privacy">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 text-left footer-col">
+            </div>
+            <div class="col-lg-4 text-left footer-col">
+              <h3 class="footer-links-title">CA Gateway Academy Is Social</h3>
+              <ul class="footer-links">
+                <li>
+                  <a href="https://www.facebook.com/CA-Gateway-Academy-376022319567142/">Facebook Page</a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/pg/CA-Gateway-Academy-376022319567142/posts/">Facebook Group</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 footer-col">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d112339.01924525795!2d77.25956522866998!3d28.371111200971352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x390cdc6f702bacb1%3A0xee56acae62375e1b!2sCODESHALA!3m2!1d28.371129099999997!2d77.3296055!5e0!3m2!1sen!2sin!4v1528103849237"
+            width="100%"
+            height="250"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen="allowfullscreen"></iframe>
+          <div class="address-text" style="color:#7f7f7f">
+            <br>
+            Address: 2nd floor, Sarojini Colony, Model Town, Yamuna Nagar, Haryana 135001.
+          </div>
+          <a href="mailto:rohitbatra987@gmail.com" style="color:#7f7f7f">
+            E: rohitbatra987@gmail.com
+          </a>
+          <br/>
+          <a href="tel:+917206980122" style="color:#7f7f7f">
+            M: +917206980122
+          </a>
+          
+        </div>
+      </div>
+      <hr style="background-color:#262626;height:2px;">
+      <p class="text-left">We are community of Chartered Accountants. CA Gateway Academy is an economical solution for advanced and personalized coaching for CA aspirants.</p>
+    </div>
+  </footer>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+
+  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+  <script src="./scripts/main.js"></script>
+  <script src="./scripts/slick/slick.min.js" charset="utf-8"></script>
+
 </body>
 </html>
